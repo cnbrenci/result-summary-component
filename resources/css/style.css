@@ -82,11 +82,16 @@ section.outer-grid {
 }
 
 .circle-gradient {
-    background: #4d21c9;
-    background: linear-gradient(to bottom, rgba(77,33,201,1) 0%, rgba(37,33,201,0) 100%);
+    --gradient-start: rgb(77, 33, 201);
+    --gradient-end: rgba(37, 33, 201, 0);
+    background: var(--gradient-start);
+    background: linear-gradient(to bottom, var(--gradient-start) 0%, var(--gradient-end) 100%);
     clip-path: circle(40%);
     min-width: 24rem;
     min-height: 24rem;
+}
+
+.centered-flex-column {
     display: flex;
     justify-content: center;
     align-items: center;
