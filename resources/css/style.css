@@ -1,0 +1,103 @@
+:root {
+    --white: white;
+    --light-blue: #CAC9FF;
+    --very-light-blue: #ECF2FF;
+    --purple: #7755FF;
+    --dark-navy: #303B59;
+
+    --h3-color: var(--dark-navy);
+    --p-color: var(--light-blue);
+
+    --font-xl: 7.2rem;
+    --font-l: 3.2rem;
+    --font-m: 2.4rem;
+    --font-body: 1.8rem;
+}
+
+html {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: var(--font-body);
+}
+
+h1 {
+    font-size: var(--font-xl);
+    color: var(--white);
+    font-weight: 800;
+}
+
+h2 {
+    font-size: var(--font-l);
+    font-weight: 700;
+}
+
+p {
+    color: var(--p-color);
+}
+
+h3 {
+    color: var(--h3-color);
+    font-size: var(--font-m);
+    font-weight: 500;
+}
+
+h3,h2,h1,p {
+    margin: 0;
+}
+
+section.outer-grid {
+    display: grid;
+    grid-template: 100vh / 100vw;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--very-light-blue);
+}
+
+.component {
+    background-color: var(--white);
+    height: 51.2rem;
+    width: 73.6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 32px;
+}
+
+.left {
+    background-color: var(--purple);
+    color: var(--white);
+    background: linear-gradient(to bottom, #6943FF 0%, #2F2CE9 100%);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 3.2rem 6.4rem;
+    --h3-color: var(--light-blue);
+}
+
+.circle-gradient {
+    background: #4d21c9;
+    background: linear-gradient(to bottom, rgba(77,33,201,1) 0%, rgba(37,33,201,0) 100%);
+    clip-path: circle(40%);
+    min-width: 24rem;
+    min-height: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
