@@ -17,7 +17,7 @@
 <body>
   <section class="outer-grid">
     <div class="component">
-      <div class="left">
+      <div class="left gradient">
         <h3>Your Result</h3>
         <div class="circle-gradient centered-flex-column">
           <h1>76</h1>
@@ -27,21 +27,37 @@
         <p>You scored higher than 65% of the people who have taken these tests.</p>
       </div>
       <div class="right">
-        Summary
+        <h3>Summary</h3>
 
-        Reaction
-        80 / 100
-      
-        Memory
-        92 / 100
-      
-        Verbal
-        61 / 100
-      
-        Visual
-        72 / 100
-      
-        Continue
+        <div class="summary-result red">
+          <p>
+            <img src="./resources/images/icon-reaction.svg" alt="lightening bolt icon" />Reaction
+          </p> 
+          <p class="navy"><strong>80 <span>/ 100</span></strong></p>
+        </div>
+        
+        <div class="summary-result yellow">
+          <p>
+            <img src="./resources/images/icon-memory.svg" alt="brain icon" />Memory
+          </p>
+          <p class="navy"><strong>92 <span>/ 100</span></strong></p>
+        </div>
+
+        <div class="summary-result green">
+          <p>
+            <img src="./resources/images/icon-verbal.svg" alt="chat bubble icon" />Verbal
+          </p>
+          <p class="navy"><strong>61 <span>/ 100</span></strong></p>
+        </div>
+
+        <div class="summary-result blue">
+          <p>
+            <img src="./resources/images/icon-visual.svg" alt="eye icon" />Visual
+          </p>
+          <p class="navy"><strong>72 <span>/ 100</span></strong></p>
+        </div>
+
+        <button type="button" class="button"><strong>Continue</strong></button>
       </div>
     </div>
   </section>  
